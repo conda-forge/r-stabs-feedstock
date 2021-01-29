@@ -7,16 +7,15 @@ package:
   version: {{ version|replace("-", "_") }}
 
 source:
-  fn: stabs_{{ version }}.tar.gz
   url:
     - {{ cran_mirror }}/src/contrib/stabs_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/stabs/stabs_{{ version }}.tar.gz
   sha256: f8507337789f668e421a6ee7b11dd5ea331bf8bff0f9702dd1b93f46c2f3c1d9
 
 build:
-  noarch: generic
   merge_build_host: true  # [win]
   number: 0
+  noarch: generic
   rpaths:
     - lib/R/lib/
     - lib/
@@ -36,11 +35,12 @@ test:
 
 about:
   home: https://github.com/hofnerb/stabs
-  license: GPL-2
+  license: GPL-2.0-only
   summary: Resampling procedures to assess the stability of selected variables with additional finite sample error control for high-dimensional variable selection procedures such as Lasso or boosting. Both, standard stability selection (Meinshausen & Buhlmann, 2010, <doi:10.1111/j.1467-9868.2010.00740.x>)  and complementary
     pairs stability selection with improved error bounds  (Shah & Samworth, 2013, <doi:10.1111/j.1467-9868.2011.01034.x>) are implemented. The package can be combined with arbitrary user specified variable selection approaches.
   license_family: GPL2
-  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
