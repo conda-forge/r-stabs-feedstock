@@ -3,7 +3,7 @@ About r-stabs
 
 Home: https://github.com/hofnerb/stabs
 
-Package license: GPL-2
+Package license: GPL-2.0-only
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-stabs-feedstock/blob/master/LICENSE.txt)
 
