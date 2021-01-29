@@ -3,13 +3,11 @@ About r-stabs
 
 Home: https://github.com/hofnerb/stabs
 
-Package license: GPL-2
+Package license: GPL-2.0-only
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-stabs-feedstock/blob/master/LICENSE.txt)
 
 Summary: Resampling procedures to assess the stability of selected variables with additional finite sample error control for high-dimensional variable selection procedures such as Lasso or boosting. Both, standard stability selection (Meinshausen & Buhlmann, 2010, <doi:10.1111/j.1467-9868.2010.00740.x>)  and complementary pairs stability selection with improved error bounds  (Shah & Samworth, 2013, <doi:10.1111/j.1467-9868.2011.01034.x>) are implemented. The package can be combined with arbitrary user specified variable selection approaches.
-
-
 
 Current build status
 ====================
